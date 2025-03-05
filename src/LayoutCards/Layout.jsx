@@ -1,7 +1,17 @@
 import React from 'react'
 import iconEllipsis from "../../images/icon-ellipsis.svg"
 
-export const Layout = ({title, colorBar, icon}) => {
+export const Layout = ({title, colorBar, icon, current, previous, period}) => {
+  const getPeriodText = (period) => {
+    switch (period){
+      case "daily":
+        return "Last day";
+      case "weekly":
+        return "Last week";
+      case "monthly":
+        return "Last month"
+    }
+  }
   return (
     <main className={`w-80 rounded-lg ${colorBar} h-36 text-white relative overflow-hidden`}>
       <img 
@@ -16,8 +26,8 @@ export const Layout = ({title, colorBar, icon}) => {
           </span>
         </section>
         <section className='mt-1 flex justify-between'>
-          <p className='text-3xl'>32hrs</p>
-          <p className='tex-sm'></p>
+          <p className='text-3xl'>{current}hrs</p>
+          <p className='tex-sm'>{getPeriodText(period)} - {previous}hrs</p>
         </section>
       </div>
     </main>

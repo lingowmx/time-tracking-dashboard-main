@@ -1,6 +1,6 @@
 import imageJeremy from "../../images/image-jeremy.png"
 
-export const Profile = () => {
+export const Profile = ({setSelectedPeriod}) => {
   return (
     <div className="w-80 h-40 rounded-lg bg-DarkBlue text-white">
       <div className="flex justify-center gap-8 items-center h-28 bg-VioletSocial rounded-lg">
@@ -14,9 +14,10 @@ export const Profile = () => {
         </div>
       </div>
       <div className="p-3 flex justify-around cursor-pointer">
-        <p>Daily</p>
-        <p>Weekly</p>
-        <p>Monthly</p>
+        <button onClick={() => setSelectedPeriod("daily")}>Daily</button>
+        <button onClick={() => setSelectedPeriod("weekly")}>Weeekly</button>
+        <button onClick={() => setSelectedPeriod("monthly")}>Monthly</button>
+
       </div>
     </div>
   )
