@@ -19,7 +19,9 @@ useEffect(() => {
   return (
     <div 
     className='pt-12 pb-12 font-rubik text-lg bg-VeryDarkBlue h-full flex flex-col justify-center items-center gap-6'>
-      <Profile setSelectedPeriod ={setSelectedPeriod}/>
+      <Profile 
+        setSelectedPeriod ={setSelectedPeriod}
+        selectedPeriod={selectedPeriod}/>
       <Work data={data[0]?.timeframes[selectedPeriod]} period={selectedPeriod}/>
       <Play data={data[1]?.timeframes[selectedPeriod]} period={selectedPeriod}/>
       <Study data={data[2]?.timeframes[selectedPeriod]} period={selectedPeriod}/>

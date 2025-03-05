@@ -25,9 +25,9 @@ export const Layout = ({title, colorBar, icon, current, previous, period}) => {
             <img src={iconEllipsis} alt="littledots" />
           </span>
         </section>
-        <section className='mt-1 flex justify-between'>
+        <section className='mt-1 flex justify-between items-center'>
           <p className='text-3xl'>{current}hrs</p>
-          <p className='tex-sm'>{getPeriodText(period)} - {previous}hrs</p>
+          <p className='text-sm text-PaleBlue'>{getPeriodText(period)} - {previous}hrs</p>
         </section>
       </div>
     </main>
