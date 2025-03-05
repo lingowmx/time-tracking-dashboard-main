@@ -1,12 +1,15 @@
 import React from 'react'
 import { Layout } from '../LayoutCards/Layout'
 import iconSelfCare from '../../images/icon-self-care.svg'
-export const SelfCare = () => {
+export const SelfCare = ({data, period}) => {
   return (
     <Layout
       title="SelfCare"
       colorBar="bg-SoftOrange"
-      icon={iconSelfCare}>
+      icon={iconSelfCare}
+      current={data.current}
+      previous={data.previous}
+      period={period}>
 
     </Layout>
   )

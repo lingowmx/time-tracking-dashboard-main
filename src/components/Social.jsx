@@ -2,12 +2,15 @@ import React from 'react'
 import { Layout } from '../LayoutCards/Layout'
 import iconSocial from '../../images/icon-social.svg'
 
-export const Social = () => {
+export const Social = ({data, period}) => {
   return (
     <Layout
       title="Social"
       colorBar="bg-VioletSocial"
-      icon={iconSocial}>
+      icon={iconSocial}
+      current={data.current}
+      previous={data.previous}
+      period={period}>
 
     </Layout>
   )
