@@ -1,17 +1,21 @@
 import React from 'react'
+import { useContext } from 'react'
 import { Layout } from '../LayoutCards/Layout'
+import { MainContext } from '../Context/MainContext'
 import workIcon from "../../images/icon-work.svg"
 
-export const Work = ({data, period}) => {
-  if(!data) return null 
+export const Work = () => {
+  const {data, selectedPeriod} = useContext(MainContext)
+  const workData = data[0]?.timeframes[selectedPeriod]
+  if(!workData) return null 
   return (
     <Layout
       title="Work"
       colorBar="bg-LightRedWork"
       icon={workIcon}
-      current={data.current}
-      previous={data.previous}
-      period={period}>
+      current={workData.current}
+      previous={workData.previous}
+      period={selectedPeriod}>
     </Layout>
   )
 }

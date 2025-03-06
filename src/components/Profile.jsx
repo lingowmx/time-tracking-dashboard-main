@@ -1,6 +1,9 @@
+import { useContext } from "react"
 import imageJeremy from "../../images/image-jeremy.png"
+import { MainContext } from "../Context/MainContext"
 
-export const Profile = ({setSelectedPeriod, selectedPeriod}) => {
+export const Profile = () => {
+  const {selectedPeriod, setSelectedPeriod} = useContext(MainContext)
   return (
     <div className="w-80 h-40 rounded-lg bg-DarkBlue text-white 
     lg:row-span-2 lg:h-[522px]">
