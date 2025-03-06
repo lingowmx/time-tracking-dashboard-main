@@ -1,12 +1,23 @@
-# React + Vite
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## My process
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Built with
 
-## Expanding the ESLint configuration
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [TailwindCSS](https://tailwindcss.com/) - CSS framework
+- [React](https://reactjs.org/) - JS library
+- [Vite](https://vite.dev/) - A fast build tool and development server
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### What I learned
+
+Because Im doing the proyects with react, Im learning the basic usage of the basic hooks of react like useState, useEffect and understanding the sintax of using it.
+Also I want to create another branch to improve the code and use another hook useContext to keep learning.
+
+From tailwind... there are always new things I learned to combine that maybe are not the best but they are very usefull.
