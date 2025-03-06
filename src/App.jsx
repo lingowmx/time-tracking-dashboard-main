@@ -18,7 +18,8 @@ useEffect(() => {
 
   return (
     <div 
-    className='pt-12 pb-12 font-rubik text-lg bg-VeryDarkBlue h-full flex flex-col justify-center items-center gap-6'>
+    className='font-rubik pt-12 pb-12 text-lg bg-VeryDarkBlue h-full flex flex-col justify-center items-center gap-6
+    lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:h-screen lg:pl-8 lg:pr-8 lg:pt-36 lg:pb-36'>
       <Profile 
         setSelectedPeriod ={setSelectedPeriod}
         selectedPeriod={selectedPeriod}/>
