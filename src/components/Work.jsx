@@ -3,7 +3,7 @@ import { Layout } from '../LayoutCards/Layout'
 import workIcon from "../../images/icon-work.svg"
 
 export const Work = ({data, period}) => {
-  if(!data) return null
+  if(!data) return null 
   return (
     <Layout
       title="Work"

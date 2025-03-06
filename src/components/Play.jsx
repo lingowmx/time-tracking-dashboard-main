@@ -3,6 +3,7 @@ import { Layout } from '../LayoutCards/Layout'
 import playIcon from "../../images/icon-play.svg"
 
 export const Play = ({data, period}) => {
+  if(!data) return null
   return (
     <Layout
       title="Play"

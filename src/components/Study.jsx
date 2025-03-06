@@ -2,6 +2,7 @@ import React from 'react'
 import { Layout } from '../LayoutCards/Layout'
 import iconStudy from '../../images/icon-study.svg'
 export const Study = ({data, period}) => {
+  if(!data) return null
   return (
     <Layout
       title="Study"

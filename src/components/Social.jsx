@@ -3,6 +3,7 @@ import { Layout } from '../LayoutCards/Layout'
 import iconSocial from '../../images/icon-social.svg'
 
 export const Social = ({data, period}) => {
+  if(!data) return null
   return (
     <Layout
       title="Social"
