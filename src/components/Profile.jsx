@@ -5,8 +5,8 @@ import { MainContext } from "../Context/MainContext"
 export const Profile = () => {
   const { selectedPeriod, setSelectedPeriod } = useContext(MainContext)
   return (
-    <div className="w-80 h-40 rounded-lg bg-DarkBlue text-white 
-    lg:row-span-2 lg:h-[522px]">
+    <div className="w-80 h-40 rounded-lg bg-DarkBlue text-white lg:w-72
+    lg:row-span-2 lg:min-h-[522px] lg:mx-auto">
       <div className="flex justify-center gap-8 items-center h-28 bg-VioletSocial rounded-lg
       lg:h-[360px] lg:flex-col lg:items-start lg:pl-8">
         <img
